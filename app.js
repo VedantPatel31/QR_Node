@@ -19,8 +19,8 @@ const io = socketIO(server, {
     },
   });
   app.use((req, res, next) => {
-    // res.header("Access-Control-Allow-Origin", "https://qrproject-15a08.web.app");
-    res.header("Access-Control-Allow-Origin", "http://localhost:3001");
+    res.header("Access-Control-Allow-Origin", "https://qrproject-15a08.web.app");
+    // res.header("Access-Control-Allow-Origin", "http://localhost:3001");
 
     res.header(
       "Access-Control-Allow-Headers",
