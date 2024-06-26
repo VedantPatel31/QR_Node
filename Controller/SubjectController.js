@@ -21,7 +21,7 @@ const addSubject = async (req,res)=>{
         })
     })
 }
-const getALlSubject = async (req,res)=>{
+const getALlSubject = async (req,res)=>{ 
     const subject =await subjectSchema.find();
     if(subject){
         res.status(200).json({
